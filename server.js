@@ -1,10 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import userRouter from '../Back-end/routes/userRouter.js';
-import doctorRouter from '../Back-end/routes/doctorRouter.js';
-import adminRouter from '../Back-end/routes/adminRouter.js';
-import hospitalRouter from '../Back-end/routes/hospitalRouter.js'
+import userRouter from './routes/userRouter.js';
+import doctorRouter from './routes/doctorRouter.js';
+import adminRouter from './routes/adminRouter.js';
+import hospitalRouter from './routes/hospitalRouter.js'
 import cors from 'cors';
 
 const app = express();
