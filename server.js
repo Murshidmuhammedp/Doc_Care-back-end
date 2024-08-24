@@ -14,9 +14,13 @@ app.use(express.json());
 
 app.use(cors({
     // origin: "http://localhost:5173",
-    origin: "https://doc-care-eight.vercel.app/",
-    methods:['GET','POST','PUT','PATCH','DELETE'],
-    allowedHeaders:['Content-Type','Authorization']
+    // origin: "https://doc-care-eight.vercel.app/",
+    origin: [
+        "https://doc-care-eight.vercel.app",
+        "https://doc-care-cqcs1p2vf-murshidmuhammedps-projects.vercel.app"
+    ],
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use("/user/api", userRouter);
